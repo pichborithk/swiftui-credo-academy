@@ -1,1 +1,1 @@
-# SwiftUI (Robert Petras)
+# SwiftUI (Credo Academy)
