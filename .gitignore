@@ -5,7 +5,7 @@
 # OS X
 .DS_Store
 *.swp
-Icon
+Icon?
 
 # Xcode
 *~.nib
