@@ -15,6 +15,7 @@ struct CardView: View {
     // MARK: - PROPERTIES
     
     @State private var imageNumber = 1
+    @State private var isShowingSheet = false
     
     // MARK: - FUNCTIONS
     
@@ -50,9 +51,14 @@ struct CardView: View {
 
                         Button {
                             // ACTION: Show a Sheet
-                            print("tapped")
+                            isShowingSheet.toggle()
                         } label: {
                             CustomButtonView()
+                        }
+                        .sheet(isPresented: $isShowingSheet) {
+                            SettingView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium, .large])
                         }
                     }
 
