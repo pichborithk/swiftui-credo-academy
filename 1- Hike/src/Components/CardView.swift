@@ -15,11 +15,11 @@ struct CardView: View {
     // MARK: - PROPERTIES
     
     @State private var imageNumber = 1
-    @State private var randomNumber = 1
     
     // MARK: - FUNCTIONS
     
     func randomImage() {
+        var randomNumber: Int
         repeat {
             randomNumber = Int.random(in: 1...5)
         } while randomNumber == imageNumber
