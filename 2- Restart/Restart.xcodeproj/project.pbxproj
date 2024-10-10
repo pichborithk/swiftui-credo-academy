@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		7E66CC692CB626070065BA76 /* Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED304CA2CB7912B00068E9A /* Restart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Restart-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +33,7 @@
 		7E66CC602CB626070065BA76 = {
 			isa = PBXGroup;
 			children = (
+				7ED304CA2CB7912B00068E9A /* Restart-Info.plist */,
 				7E66CC6B2CB626070065BA76 /* src */,
 				7E66CC6A2CB626070065BA76 /* Products */,
 			);
@@ -255,9 +257,9 @@
 				DEVELOPMENT_TEAM = WMZ36KBRZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Restart-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +286,9 @@
 				DEVELOPMENT_TEAM = WMZ36KBRZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Restart-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
