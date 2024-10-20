@@ -14,7 +14,7 @@ import SwiftUI
         Color.customBlue
             .ignoresSafeArea()
 
-        CircleGroupView(shapeColor: .white, shapeOpacity: 0.2)
+        CircleGroupView(shapeColor: .white, shapeOpacity: 0.2, isAnimating: .constant(true))
     }
 }
 
@@ -23,6 +23,7 @@ struct CircleGroupView: View {
 
     var shapeColor: Color
     var shapeOpacity: Double
+    @Binding var isAnimating: Bool
 
     // MARK: - BODY
 
@@ -35,5 +36,9 @@ struct CircleGroupView: View {
                 .stroke(shapeColor.opacity(shapeOpacity), lineWidth: 80)
                 .frame(width: 260, height: 260, alignment: .center)
         }
+        .blur(radius: isAnimating ? 0 : 10)
+        .opacity(isAnimating ? 1: 0)
+        .scaleEffect(isAnimating ?1  : 0.5)
+        .animation(.easeInOut(duration: 1), value: isAnimating)
     }
 }
